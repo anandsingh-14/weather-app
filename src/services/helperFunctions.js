@@ -40,7 +40,7 @@ export const getDetailedForecast = data => ([
 const getWeekday = date => moment.unix(date).format('dddd').substring(0, 3);
 
 export const getUpcomingDaysForecast = data =>
-    data.map(day => ({
+    data.slice(0,7).map(day => ({
         maxTemp: Math.round(day.temp.max),
         minTemp: Math.round(day.temp.min),
         weekday: getWeekday(day.dt),

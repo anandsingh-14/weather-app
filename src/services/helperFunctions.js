@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export const getCurrentDayForecast = (data, title) => ({
+export const getCurrentDayForecast = (data) => ({
     weekday: moment.unix(data.dt).format('dddd'),
     date: moment.unix(data.dt).format('MMMM Do'),
     temperature: Math.round(data.temp),
@@ -40,7 +40,7 @@ export const getDetailedForecast = data => ([
 const getWeekday = date => moment.unix(date).format('dddd').substring(0, 3);
 
 export const getUpcomingDaysForecast = data =>
-    data.slice(1).map(day => ({
+    data.map(day => ({
         maxTemp: Math.round(day.temp.max),
         minTemp: Math.round(day.temp.min),
         weekday: getWeekday(day.dt),

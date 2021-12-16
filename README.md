@@ -1,9 +1,5 @@
-## Front End Test
-An ReactJS focused take home test for Front-end Developers.
 
 ### Instructions
-* Clone this repo
-* Complete this exercise and submit either a zip of the solution or a link to a new repo
 * Please incorporate ReactJS framework into your solution. All other choices of libraries, frameworks, etc. are up to you.
 * Also show case the use of any State Management libraries (e.g. *redux*, *mobx*,  *react-query*, etc.) in the application.
 
@@ -29,10 +25,3 @@ An ReactJS focused take home test for Front-end Developers.
         + High temperature
         + Low temperature
         + Weather description (ie. Breezy)
-
-### Bonus
-* Using Typescript.
-* Use of latest *React Hooks* and *Context* APIs will be preferred.
-* Using [GraphQL based Open Weather APIs](https://github.com/konstantinmuenster/graphql-weather-api) to create the app.
-* Unit Testing
-* Project Layout Structure.
